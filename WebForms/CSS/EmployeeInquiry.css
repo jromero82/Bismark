@@ -1,0 +1,95 @@
+﻿/* File Created: May 10, 2012 */
+
+body 
+{
+	background-color: #d6d6d6;
+}
+
+#gdvPayStubs
+{
+	border:thin solid black;
+	margin-top:10px;
+	width:100%;    
+}
+
+#gdvPayStubs td
+{
+	text-align:center;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+table tbody tr
+{
+	cursor: default;   
+}
+
+#gdvPayStubs th
+{
+	padding-top:5px;
+	padding-bottom:5px; 
+}
+
+#gdvPayStubs a
+{
+	text-decoration: none;
+	color:#000000;
+}
+
+#gdvPayStubs a:hover
+{
+	text-decoration: underline;
+	color:Blue;
+}
+
+#gdvPayStubs caption
+{
+	font-size:8.25pt;
+	margin-bottom: 5px;
+}
+
+fieldset h4
+{
+	margin-top:0;
+}
+
+.labels 
+{
+   width:150px;
+   display:inline-block;
+}
+
+fieldset
+{
+	width:400px;   
+	
+}
+
+.left-col
+{
+	float:left;
+	margin-right:15px;
+}
+
+.right-col
+{
+	float:left;
+}
+
+.textAlignRight 
+{
+	text-align: right;
+}
+
+.textAlignCenter
+{
+	text-align:center;
+}
+
+#lblSickDays, #lblSickDayDetail 
+{
+	font-size: 10pt;
+	font-weight:bold;	
+}
+
+

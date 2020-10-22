@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Bismark.master.cs" Inherits="Bismark.WebForms.Bismark" ClientIDMOde="Static" %>
+
+<!DOCTYPE html">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="Stylesheet" type="text/css" href="~/CSS/Master.css" />
+    <link rel="Stylesheet" type="text/css" href="~/CSS/jqueryui-theme/jquery-ui-1.8.20.custom.css" />
+    <link rel="Stylesheet" type="text/css" href="~/CSS/jquery.qtip.min.css" />
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+    <script type="text/javascript" src="Scripts/slimScroll.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.qtip.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('nav ul input[type=button]').each(function () {
+                $(this).click(function () {
+                    window.location.href = $(this).attr('data-href');
+                });
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+        <header>
+            <div style="width: 380px;margin:0 auto;"><img src="Images/BismarkLogo.png" alt="Logo" /></div>
+            <nav>
+                <ul>
+                    <li><input id="btnInquiry" type="button" data-href="EmployeeInquiry.aspx" value="EMPLOYEE INQUIRY" /></li>
+                    <li><input id="btnCreatePO" type="button" data-href="CreatePO.aspx" value="CREATE PO" /></li>
+                    <li><input id="btnBrowsePO" type="button" data-href="BrowsePO.aspx" value="BROWSE PO" /></li>
+                    <li><input id="btnProcessPO" type="button" data-href="ProcessPO.aspx" value="PROCESS PO" /></li>
+                </ul>
+            </nav>
+            <asp:Label ID="lblUsername" runat="server" Font-Bold="False" Font-Size="Large"></asp:Label>
+            <asp:HyperLink ID="lnkLogout" runat="server" NavigateUrl="Logout.aspx"></asp:HyperLink>
+        </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        </div>
+    </form>    
+</body>
+</html>

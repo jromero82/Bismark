@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C622774F-6AEF-4E4B-B5B5-8ACB744D6A4C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bismark</RootNamespace>
+    <AssemblyName>Bismark</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Bismark.GUI.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bismark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bismark.designer.cs">
+      <DependentUpon>Bismark.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\IMClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\IMClient.designer.cs">
+      <DependentUpon>IMClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\AddEmployee.designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\BonusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\BonusForm.designer.cs">
+      <DependentUpon>BonusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\CalcPayPeriods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\CalcPayPeriods.designer.cs">
+      <DependentUpon>CalcPayPeriods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ModifyEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\ModifyEmployee.designer.cs">
+      <DependentUpon>ModifyEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\SalaryChanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\SalaryChanges.designer.cs">
+      <DependentUpon>SalaryChanges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR\ViewPaystub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR\ViewPaystub.designer.cs">
+      <DependentUpon>ViewPaystub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\CreatePO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\CreatePO.designer.cs">
+      <DependentUpon>CreatePO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\ModifyPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\ModifyPO.Designer.cs">
+      <DependentUpon>ModifyPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PO\ProcessPO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PO\ProcessPO.Designer.cs">
+      <DependentUpon>ProcessPO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bismark.resx">
+      <DependentUpon>Bismark.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\IMClient.resx">
+      <DependentUpon>IMClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\BonusForm.resx">
+      <DependentUpon>BonusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\CalcPayPeriods.resx">
+      <DependentUpon>CalcPayPeriods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\ModifyEmployee.resx">
+      <DependentUpon>ModifyEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\SalaryChanges.resx">
+      <DependentUpon>SalaryChanges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR\viewPaystub.resx">
+      <DependentUpon>ViewPaystub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\CreatePO.resx">
+      <DependentUpon>CreatePO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\ModifyPO.resx">
+      <DependentUpon>ModifyPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PO\ProcessPO.resx">
+      <DependentUpon>ProcessPO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MDIButtons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BOL\BOL.csproj">
+      <Project>{09A216B1-BA28-45ED-BBEB-CBDF4C560001}</Project>
+      <Name>BOL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{6605DB23-18EE-42E7-ABB3-3993550FF96D}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disconnect.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bismarkIcon.ico" />
+    <Content Include="Resources\BismarkSplash.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

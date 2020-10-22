@@ -1,0 +1,171 @@
+﻿#form-header
+{
+    border-bottom: 3px solid #f0f0f0;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: auto;
+}
+
+#search-type
+{
+    width: 100px;
+    height: 70px;
+    float: left;
+}
+
+#name-search, #dates, #orderId-search
+{
+   float: left;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+
+#dates label
+{
+    width: 30px;   
+    text-align: right;
+    display: inline-table;
+}
+
+#search-filter
+{
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#btnGo
+{
+    width: 75px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 30px;   
+}
+
+#chkDates 
+{
+    float: right;   
+}
+
+
+#wrapper-orders
+{
+    float: left;
+    width: 490px;
+    display: block;  
+    margin: 0;  
+}
+
+#wrapper-orders input
+{
+       width: 100px;
+}
+
+#gdvOrders
+{
+    width: 475px;
+    height: 150px;
+    display: block;   
+}
+
+#gdvItems
+{
+    width: 865px;
+    height: 130px;
+    float: left;   
+}
+
+/* Item Details */
+
+#item-details
+{
+    float: right;
+    width: 480px;  
+    margin-top: 50px;
+}
+#item-details .first-column
+{
+    float:left;   
+}
+
+#item-details .last-column
+{
+    float: left;   
+}
+
+#item-details .row
+{
+    width: 240px;
+    margin-bottom: 5px;  
+}
+
+#item-details label
+{
+    width: 65px;
+    display: inline-table;
+    text-align: right;
+}
+
+#item-details input[type=text]
+{
+    width: 160px;
+}
+
+#item-details input[type=number]
+{
+    width: 55px;   
+}
+
+#item-details textarea
+{
+    resize: none;   
+}
+
+#lblQuantity
+{
+    margin-left: -18px;   
+}
+
+#btnCloseOrder
+{
+    float: right;  
+    width: 87px;
+    height: 25px; 
+}
+
+#wrapper-orders
+{
+    overflow: auto;   
+}
+
+#wrapper-items
+{
+    clear: both;  
+    float: left; 
+    width: 880px;
+}
+
+#process-buttons
+{
+    margin-top: 46px;
+    margin-left: 15px;
+    width: 80px;   
+    float: left;
+}
+
+#txtFirstName, #txtLastName, #ddlFilter, #txtPOId
+{
+    width: 120px;       
+}
+
+#btnApprove, #btnDeny
+{
+    width: 75px;
+    height: 25px;   
+}
+
+#btnRemove, #btnSave
+{
+    width: 150px;   
+}

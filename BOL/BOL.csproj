@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09A216B1-BA28-45ED-BBEB-CBDF4C560001}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bismark</RootNamespace>
+    <AssemblyName>BOL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bonus\Bonus.cs" />
+    <Compile Include="Bonus\BonusCUD.cs" />
+    <Compile Include="Bonus\BonusLists.cs" />
+    <Compile Include="BusinessRules.cs" />
+    <Compile Include="Chat\AutoScrollBox.cs" />
+    <Compile Include="Chat\ClientData.cs" />
+    <Compile Include="Chat\IMData.cs" />
+    <Compile Include="Employee\Employee.cs" />
+    <Compile Include="Employee\EmployeeLists.cs" />
+    <Compile Include="Job\Job.cs" />
+    <Compile Include="Job\JobLists.cs" />
+    <Compile Include="Payroll\Payroll.cs" />
+    <Compile Include="Payroll\PayStub.cs" />
+    <Compile Include="Payroll\PayStubLists.cs" />
+    <Compile Include="Payroll\Pension.cs" />
+    <Compile Include="PO\Item\ItemCUD.cs" />
+    <Compile Include="PO\Item\ItemLists.cs" />
+    <Compile Include="PO\Order\Order.cs" />
+    <Compile Include="PO\Order\OrderCUD.cs" />
+    <Compile Include="PO\Order\OrderLists.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalaryAdjustment\SalaryAdjustment.cs" />
+    <Compile Include="SalaryAdjustment\SalaryAdjustmentCUD.cs" />
+    <Compile Include="SalaryAdjustment\SalaryAdjustmentLists.cs" />
+    <Compile Include="SickDay\SickDay.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SQL\SQL.csproj">
+      <Project>{A50D0144-1B98-4F26-8D73-73F97BBA471C}</Project>
+      <Name>SQL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.vbproj">
+      <Project>{6605DB23-18EE-42E7-ABB3-3993550FF96D}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="PO\Item\Item.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

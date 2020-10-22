@@ -1,0 +1,122 @@
+﻿h2 { margin: 0; }
+
+/* Form Header */
+
+#form-header
+{
+    border-bottom: 3px solid #f0f0f0;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+
+#form-header fieldset {
+    width:730px;
+    margin:0 auto;
+    text-align:center;   
+}
+
+#form-header fieldset legend
+{
+    text-align:left;   
+}
+
+input[readonly=readonly]
+{
+    background-color: #f0f0f0;
+}
+
+/* Item Details Form */
+
+#item-details
+{
+    float: left;
+    width: 520px;   
+}
+#item-details .first-column
+{
+    float:left;   
+}
+
+#item-details .last-column
+{
+    float: right;   
+}
+
+#item-details .row
+{
+    width: 260px;
+    margin-bottom: 5px;  
+}
+
+#item-details label, #totals label
+{
+    width: 66px;
+    display: inline-table;
+    text-align: right;
+}
+
+#item-details input[type=text]
+{
+    width: 184px;
+}
+
+#item-details textarea
+{
+    resize: none;   
+}
+
+#lblQuantity
+{
+    margin-left: -18px;   
+}
+
+#btnAddItem, #btnOrder
+{
+    float: right;
+    width: 75px;
+    height: 25px;
+    border: none;
+}
+
+/* Totals */
+
+#totals
+{
+    width: 170px;   
+    float: left;
+}
+
+#totals .row
+{
+    width: 170px;
+    margin-bottom: 5px;  
+}
+
+/* Order */
+
+#last-order
+{
+    float: left;
+    margin-left: 5px;
+    width: 180px;   
+}
+
+#last-order label 
+{
+    width: 75px; 
+    display: inline-table;
+    text-align: right;
+}
+
+#last-order .row
+{
+    width: 180px;
+    margin-bottom: 5px; 
+}
+
+
+#gdvItems
+{
+    position: relative;
+    top: 25px;   
+}

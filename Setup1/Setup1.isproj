@@ -1,0 +1,52 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+	<PropertyGroup>
+		<!-- Select a Product Configuration -->
+		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
+		<!-- Select a Visual Studio Configuration / InstallShield Release -->
+		<Configuration>Debug</Configuration>
+		<InstallShieldRelease>$(Configuration)</InstallShieldRelease>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- The InstallShieldProject item selects the project to build -->
+		<InstallShieldProject Include="$(MSBuildProjectDirectory)\$(MSBuildProjectName).isl"/>
+		<!-- The InstallShieldReleaseFlags sets Release Flags -->
+		<!--<InstallShieldReleaseFlags Include=""/>-->
+		<!-- The InstallShieldMergeModulePath specifies what directories are
+		searched for Merge Modules -->
+		<!--<InstallShieldMergeModulePath Include=""/>-->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The ProjectReference items refer to any Visual Studio solutions you want to automatically probe for Project Output Groups.  -->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The TaggedOutputs items allow you to explicitly add extra files to output groups. Each item must include both Name and OutputGroup, as well as TargetPath metadata values. -->
+		<!--<TaggedOutputs Include="C:\My Test Exe.exe">
+			<Name>My Test Project</Name>
+			<OutputGroup>Primary output</OutputGroup>
+			<TargetPath>My Test Exe.exe</TargetPath>
+		</TaggedOutputs> -->
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2011Limited\InstallShield.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="..\BOL\BOL.csproj">
+			<Name>BOL</Name>
+			<Project>{09A216B1-BA28-45ED-BBEB-CBDF4C560001}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Data\Data.csproj">
+			<Name>Data</Name>
+			<Project>{9C131487-D195-4497-9096-AA6D27EDB379}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Bismark\GUI.csproj">
+			<Name>GUI</Name>
+			<Project>{C622774F-6AEF-4E4B-B5B5-8ACB744D6A4C}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\SQL\SQL.csproj">
+			<Name>SQL</Name>
+			<Project>{A50D0144-1B98-4F26-8D73-73F97BBA471C}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Utilities\Utilities.vbproj">
+			<Name>Utilities</Name>
+			<Project>{6605DB23-18EE-42E7-ABB3-3993550FF96D}</Project>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

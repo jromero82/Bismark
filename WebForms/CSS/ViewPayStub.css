@@ -1,0 +1,417 @@
+﻿/* File Created: May 13, 2012 */
+
+/* Paystub CSS */
+
+body
+{
+	font-family: Calibri, Tahoma, Sans-Serif;
+}
+
+.textAlignRight 
+{
+	text-align: right;
+}
+
+#payStub 
+{
+	width: 890px;
+	height: 519px;
+	background-image: url('../images/stub_template.jpg');
+}
+
+#lblEmpName
+{
+	position:absolute;
+	top:15px;
+	left:25px;	
+	font-weight:bolder;
+	font-size: large;
+}
+
+#empIdLabel 
+{
+	position: absolute;
+	top:20px;
+	left:270px;
+	font-weight:bold;
+	font-size:10pt;	
+}
+
+#lblEmpId
+{
+	position: absolute;
+	top: 20px;
+	left: 352px;
+	font-size:10pt;
+}
+
+#deptLabel 
+{
+	position: absolute;
+	top: 20px;
+	left: 450px;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+#lblDept
+{
+	position: absolute;
+	top: 20px;
+	left: 532px;	
+	font-size: 10pt;
+}
+
+#periodEndLabel 
+{
+	position: absolute;
+	top: 20px;
+	left: 670px;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+#lblPeriodEnd 
+{
+	position: absolute;
+	top: 20px;
+	left: 743px;	
+	font-size: 10pt;
+}
+
+#jobAssignmentLabel 
+{
+	position: absolute;
+	top: 40px;
+	left: 450px;
+	font-weight: bold;
+	font-size: 10pt;
+}
+
+#lblJobAssignment 
+{
+	position: absolute;
+	top: 40px;
+	left: 549px;	
+	font-size: 10pt;
+}
+
+#earningsLabel
+{
+	position: absolute;
+	top: 82px;
+	left: 140px;	
+	font-size: 12pt;
+	color:White;
+}
+
+#deductionsLabel 
+{
+	position: absolute;
+	top: 82px;
+	left: 585px;	
+	font-size: 12pt;
+	color:White;
+}
+
+
+#typeLabel, #hoursLabel, #rateLabel, #amountLabel, 
+#ytdLabel, #type2Label, #currentLabel, #ytd2Label, 
+#type3Label, #current2Label, #ytd3Label 
+{
+	position:absolute;
+	top: 110px;
+	font-size: 11pt;	
+}
+
+#typeLabel { left: 65px; }
+#hoursLabel { left: 150px;}
+#rateLabel {left: 220px;}
+#amountLabel { left: 278px; }
+#ytdLabel { left: 375px; }
+#type2Label { left: 470px; }
+#currentLabel { left: 545px; }
+#ytd2Label { left: 622px; }
+#type3Label { left: 705px; }
+#current2Label { left: 780px;}
+#ytd3Label { left: 855px; }
+ 
+
+#salaryLabel 
+{
+	position: absolute;
+	top: 150px;
+	left: 25px;
+	font-size: 10pt;
+}
+
+#lblSalaryAmt 
+{
+	position: absolute;
+	top: 150px;
+	left: 272px;
+	font-size: 10pt;
+}
+
+#lblSalaryYTDAmt
+{
+	position: absolute;
+	top: 150px;
+	left: 349px;
+	font-size: 10pt;
+}
+
+#bonusLabel 
+{
+	position: absolute;
+	top: 170px;
+	left: 25px;
+	font-size: 10pt;
+}
+
+#lblBonusAmt 
+{
+	position: absolute;
+	top: 170px;
+	left: 272px;
+	font-size: 10pt;
+}
+
+#lblBonusYTDAmt
+{
+	position: absolute;
+	top: 170px;
+	left: 349px;
+	font-size: 10pt;
+}
+
+#incomeTaxLabel 
+{
+	position: absolute;
+	top: 150px;
+	left: 435px;
+	font-size: 10pt;
+}
+
+#lblIncomeTax
+{
+	position: absolute;
+	top: 150px;
+	left: 544px;
+	font-size: 10pt;
+}
+
+#lblIncomeTaxYTD
+{
+	position: absolute;
+	top: 150px;
+	left: 605px;
+	font-size: 10pt;
+}
+
+/* EI */
+
+#eiLabel 
+{
+	position: absolute;
+	top: 170px;
+	left: 435px;
+	font-size: 10pt;
+}
+
+#lblEI 
+{
+	position: absolute;
+	top: 170px;
+	left: 544px;
+	font-size: 10pt;
+}
+
+#lblEIYTD 
+{
+	position: absolute;
+	top: 170px;
+	left: 605px;
+	font-size: 10pt;
+}
+
+/* CPP */
+
+#cppLabel 
+{
+	position: absolute;
+	top: 190px;
+	left: 435px;
+	font-size: 10pt;
+}
+
+#lblCPP 
+{
+	position: absolute;
+	top: 190px;
+	left: 544px;
+	font-size: 10pt;
+}
+
+#lblCPPYTD 
+{
+	position: absolute;
+	top: 190px;
+	left: 605px;
+	font-size: 10pt;
+}
+
+/* PENSION */
+
+#pensionLabel 
+{
+	position: absolute;
+	top: 210px;
+	left: 435px;
+	font-size: 10pt;
+}
+
+#lblPension
+{
+	position: absolute;
+	top: 210px;
+	left: 544px;
+	font-size: 10pt;
+}
+
+#lblPensionYTD 
+{
+	position: absolute;
+	top: 210px;
+	left: 605px;
+	font-size: 10pt;
+}
+
+/* SUMMARY AREA */
+
+#summaryLabel
+{
+	position: absolute;
+	top: 410px;
+	left:30px;
+	font-size: 12pt;
+	color:white;
+}
+
+#grossLabel 
+{
+	position: absolute;
+	top: 410px;
+	left:133px;
+	font-size: 12pt;
+	color:white; 
+}
+
+#dedLabel
+{
+	position: absolute;
+	top: 410px;
+	left:228px;
+	font-size: 12pt;
+	color:white; 
+}
+
+#netPayLabel
+{
+	position: absolute;
+	top: 410px;
+	left:345px;
+	font-size: 12pt;
+	color:white;  
+}
+
+#allocationLabel 
+{
+	position: absolute;
+	top: 410px;
+	left:585px;
+	font-size: 12pt;
+	color:white;  
+}
+
+#currentLabel3
+{
+	position: absolute;
+	top: 440px;
+	left:26px;
+	font-size: 12pt;
+	font-weight: bold;    
+}
+
+#ytd4Label
+{
+	position: absolute;
+	top: 473px;
+	left:26px;
+	font-size: 12pt;
+	font-weight: bold;    
+}
+
+#lblCurrGross 
+{
+	position: absolute;
+	top: 440px;
+	left:126px;
+	font-size: 12pt;  
+}
+
+#lblCurrDed 
+{
+	position: absolute;
+	top: 440px;
+	left:227px;
+	font-size: 12pt; 
+}
+
+#lblCurrNet 
+{
+	position: absolute;
+	top: 440px;
+	left:328px;
+	font-size: 12pt; 
+}
+
+#lblYTDGross 
+{
+	position: absolute;
+	top: 473px;
+	left:126px;
+	font-size: 12pt;
+}
+
+#lblYTDDed 
+{
+	position: absolute;
+	top: 473px;
+	left:227px;
+	font-size: 12pt; 
+}
+
+#lblYTDNet 
+{
+	position: absolute;
+	top: 473px;
+	left:328px;
+	font-size: 12pt;
+}
+
+#lblAllocationAmt 
+{
+	position: absolute;
+	top: 440px;
+	left:400px;
+	font-size: 12pt;
+}
+
+#fakeAllocationLabel
+{
+	position: absolute;
+	top: 440px;
+	left:500px;
+	font-size: 12pt;
+}

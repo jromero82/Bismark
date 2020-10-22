@@ -1,0 +1,144 @@
+﻿body, html
+{
+    height: 100%;     
+}
+body 
+{
+    font-family: sans-serif;
+    font-size: 8.25pt;
+    background-color: #708090;
+    margin: 0;
+}
+
+#wrapper
+{
+    width: 980px;
+    margin: 0 auto;
+    background-color: #d6d6d6;
+    min-height: 100%;  
+    overflow: auto; 
+    
+}
+
+fieldset
+{
+  -moz-border-radius: 5px;  
+  border-radius: 5px;  
+  -webkit-border-radius: 5px;
+  padding: 10px;
+}
+
+input, textarea
+{
+    -moz-border-radius: 3px;  
+    border-radius: 3px;  
+    -webkit-border-radius: 3px;
+}
+
+input[type=submit], input[type=button]
+{
+    background-color: #708090;
+    color: #fff;
+    font-family: Calibri;
+    font-weight: bold;   
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    height: 25px;
+}
+
+input[type=submit]:hover, input[type=button]:hover
+{
+    background-color: #647381;   
+}
+
+input[type=submit]:active, input[type=button]:active
+{
+    background-color: #a5abb3;
+}
+
+select 
+{
+    background-color: #708090;
+    color: #fff;   
+}
+
+.x-button
+{
+    
+}
+
+.input-error
+{
+    border: 2px inset #ca0202;   
+}
+
+table 
+{
+    border-collapse: collapse;   
+}
+
+table tbody tr
+{
+    cursor: hand;   
+}
+
+.alt-row
+{
+    background-color: #eee;
+}
+
+
+#login 
+{
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: thin solid #708090;
+    padding: 15px;
+    overflow: auto;    
+}
+
+#loginError
+{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffece8;
+    border: thin solid #985544;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+nav 
+{
+    width: 650px;
+    margin: 0 auto;   
+}
+nav ul li 
+{
+    display: inline-block;
+}
+
+nav ul li input[type=button]
+{
+    width: 150px;
+    height: 35px;
+    background: url('../Images/MDIButtons.png');
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    cursor: hand; 
+}
+
+nav ul li input[type=button]:hover
+{
+    font-size: 1.3em;   
+}
+
+header 
+{
+    border-bottom: thick outset #000;   
+    margin: 0 0 15px 0; 
+}
